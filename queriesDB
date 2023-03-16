@@ -1,0 +1,23 @@
+use("todo-list")
+
+// db.task.insertMany([{
+//   name:"Preparar o café",
+//   done: false,
+//   checklistID:  ObjectId("64131a76f47138837e7dfc68")
+// }, {
+//   name:"Ligar o notebook",
+//   done: true,
+//   checklistID:  ObjectId("64131a76f47138837e7dfc68")
+
+// }]);
+
+// db.checklist.aggregate({
+//   $lookup: {
+//     from: "task",
+//     localField: "_id",
+//     foreinField: "checklistId",
+//     as: "tasks"
+//   }
+// })
+
+
