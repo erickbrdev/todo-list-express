@@ -1,4 +1,4 @@
-# Ferramentas utilizadas e aprendizados!
+# Ferramentas utilizadas e aprendizados:
 
 - O que é backend
 - NodeJs
