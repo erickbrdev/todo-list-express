@@ -3,6 +3,7 @@ const path = require("path");
 
 const checkListRouter = require("./routes/checklist");
 const rootRouter = require("./routes/index");
+const { checklistDependentRoute, simpleRouter } = require("./routes/task");
 const methodOverride = require("method-override");
 
 require("../config/database");
@@ -19,5 +20,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 app.use("/", rootRouter);
 app.use("/checklists", checkListRouter);
+app.use("/checklists", checklistDependentRoute);
+app.use("/tasks", simpleRouter);
 
 module.exports = app;
